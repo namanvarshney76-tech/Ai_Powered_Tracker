@@ -1,0 +1,355 @@
+
+/* Tab styles */
+.tab-button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.tab-button.active {
+    background-color: #4F46E5 !important;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+:root {
+  --bg-color: #fffaf0;
+  --text-color: #2d3748;
+  --card-bg: white;
+  --border-color: #f6ad55;
+  --primary: #f6ad55;
+  --secondary: #f6871f;
+}
+
+.dark {
+  --bg-color: #1a202c;
+  --text-color: #f7fafc;
+  --card-bg: #2d3748;
+  --border-color: #f6ad55;
+  --primary: #f6ad55;
+  --secondary: #f6871f;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%);
+    padding-top: 80px;
+    padding-left: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.bg-white {
+  background-color: white !important;
+  transition: background-color 0.3s ease;
+  border: 1px solid rgba(246, 173, 85, 0.2);
+}
+.border-gray-300 {
+  border-color: var(--border-color) !important;
+  transition: border-color 0.3s ease;
+}
+/* Main content background */
+main {
+    background-color: transparent;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 2rem;
+}
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+}
+section {
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 0;
+    margin-bottom: 2rem;
+    box-shadow: none;
+    backdrop-filter: none;
+    border: none;
+}
+
+/* Video section styling */
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+/* Revolutionize section cards */
+.bg-white\/10 {
+    transition: all 0.3s ease;
+}
+
+.bg-white\/10:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: rgba(255,255,255,0.15) !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Revolutionize section cards */
+.bg-gray-900 {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.bg-gray-900:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    z-index: 1;
+}
+section.bg-black {
+    background-color: #000;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+section.bg-black {
+    background-color: #000;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+/* Theme transition */
+.theme-transition * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+/* Featured Solution Animation */
+#stepsContainer {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#stepsContainer:not(.hidden) {
+    opacity: 1;
+    transform: scale(1);
+}
+.step-btn {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    position: relative;
+    overflow: hidden;
+}
+.step-btn:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+.step-content {
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.step-content:not(.hidden) {
+    max-height: 200px;
+    margin-top: 0.5rem;
+}
+
+/* Delay animations for staggered effect */
+.animate-delay-100 {
+    animation-delay: 0.1s;
+}
+
+.animate-delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animate-delay-300 {
+    animation-delay: 0.3s;
+}
+/* Section styling */
+section {
+    scroll-margin-top: 100px;
+}
+/* Why Choose header styling */
+section h2.text-center.text-3xl.font-bold.text-gray-900.mb-12 {
+    background-color: #FBBF24;
+    display: block;
+    text-align: center;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    margin: 0 auto 3rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+/* Custom shadow for cards */
+.custom-shadow {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+/* Responsive iframe container */
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+/* Solution card hover effect */
+.solution-card {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+/* Key Solutions Section */
+.max-w-6xl.mx-auto.text-center.mb-16 {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(246, 173, 85, 0.5);
+    box-shadow: 0 0 20px rgba(246, 173, 85, 0.3);
+}
+
+.max-w-6xl.mx-auto.text-center.mb-16 h2 {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.max-w-6xl.mx-auto.text-center.mb-16 p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-primary-50 {
+    background-color: rgba(246, 173, 85, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.bg-secondary-50 {
+    background-color: rgba(246, 135, 31, 0.1);
+    backdrop-filter: blur(10px);
+}
+.solution-card {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.85) !important;
+}
+.solution-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(79, 70, 229, 0.1), transparent);
+    transition: 0.5s;
+}
+
+.solution-card:hover::before {
+    left: 100%;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Image container styles */
+.image-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* How It Works Section */
+.workflow-step {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.workflow-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.workflow-step:hover .step-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.step-icon {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bg-primary-50 {
+    background-color: rgba(246, 173, 85, 0.1);
+}
+
+.bg-secondary-50 {
+    background-color: rgba(246, 135, 31, 0.1);
+}
+
+/* Workflow Automation Section */
+.workflow-step {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.workflow-step:hover {
+    transform: translateY(-5px);
+}
+
+.workflow-step:hover .step-icon {
+    transform: scale(1.1);
+}
+
+.step-icon {
+    transition: all 0.3s ease;
+}
