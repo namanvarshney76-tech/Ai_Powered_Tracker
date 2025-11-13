@@ -86,7 +86,7 @@ class CustomNavbar extends HTMLElement {
         </button>
         <div class="nav-links">
           <a href="/" class="nav-link">Home</a>
-          <a href="#reimagine" class="nav-link">Solution</a>
+          <a href="#revolutionize" class="nav-link">Solution</a>
           <a href="#contact" class="nav-link">Contact</a>
 </div>
       </div>
